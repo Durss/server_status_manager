@@ -1,0 +1,89 @@
+.shadow {
+	box-shadow: 0px 2px 3px 0px #bbb;
+}
+.shadow-inset {
+	box-shadow: inset 0px 2px 3px 0px #bbb;
+}
+h1,
+.holder {
+	font-size: 40px;
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	text-align: center;
+	.shadow;
+}
+
+h2 {
+	font-size: 20px;
+	width: 100%;
+	display: block;
+	padding: 5px 10px;
+	background-color: #f8f8f8;
+	border-radius: 30px;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	.shadow;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+	border: none;
+	background-color: #b5ccec;
+	border-bottom: 1px solid #555;
+	border-left: 1px solid #888;
+	transition: all .2s;
+	font-size: 20px;
+	font-weight: bold;
+	color: #555;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: auto;
+	display: block;
+
+	.shadow;
+	
+	&:hover {
+		background-color: #c8d9f1;
+	}
+}
+
+label {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+input {
+	border: none;
+	background-color: #fff;
+	transition: all .2s;
+	font-size: 20px;
+	font-weight: normal;
+	color: #555;
+	padding: 10px 20px;
+	border-radius: 10px;
+	.shadow-inset;
+	&::placeholder {
+		color: #aaa;
+		font-style: italic;
+	}
+	&:focus {
+		background-color: #eaf0f8;
+	}
+}
+
+button, input {
+	&:not(input[type="text"]) {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+}

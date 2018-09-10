@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"strict": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"strictNullChecks": false,
+		"emitDecoratorMetadata": false,
+		"experimentalDecorators": true,
+		"declaration": false,
+		"rootDir": "./src",
+		"outDir": "./build"
+	},
+	"compileOnSave": true,
+	"exclude": [
+		"node_modules",
+		"node_modules/**/*.d.ts",
+	]
+}
